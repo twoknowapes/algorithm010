@@ -7,4 +7,4 @@ def removeDuplicates(self, nums: List[int]) -> int:
             nums.pop(idx)
         else:
             idx, temp = idx + 1, temp + 1
-    return len(nums)
+        return len(nums)
