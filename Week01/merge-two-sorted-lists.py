@@ -1,16 +1,9 @@
 def mergeTwoList(self, l1: ListNode, l2: ListNode) -> ListNode:
-    prev = ListNode(0)
-    cur = prev
+    if not l1 or not l2: return l2 or l1
 
-    while l1 and l2:
-        if l1.val < l2.val:
-            prev.next = l1
-            prev, l1 = prev.next, l1.next
-        else:
-            prev.next = l2
-            prev, l2 = prev.next, l2.next
-
-    if l1 or l2:
-        prev.next = l1 or l2
-
-    return cur.next
+    if l1.val < l2.val:
+        l1.next = self.mergeTwoList(l1.next, l2)
+        return l1
+    else:
+        l2.next = self.mergeTwoList(l2.next, l1)
+        return l2
