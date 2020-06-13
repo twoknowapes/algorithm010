@@ -1,9 +1,9 @@
-import collections
+from collections import deque
 
 
 class MyCircularDeque:
     def __init__(self, k: int):
-       self.deque = collections.deque(maxlen=k) 
+       self.deque = deque(maxlen=k) 
 
     def insertFront(self, value: int) -> bool:
         return len(self.deque) < self.deque.maxlen and (self.deque.appendleft(value) or True)      
