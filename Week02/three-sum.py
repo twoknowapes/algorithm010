@@ -1,5 +1,5 @@
-def threeSum(self, nums: List[int]) -> List[List[int]]:
-    if len(nusm) < 3: return []
+def threeSum(self, nums: list[int]) -> list[list[int]]:
+    if len(nums) < 3: return []
 
     nums.sort()
     res = set()

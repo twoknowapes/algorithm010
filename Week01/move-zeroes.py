@@ -1,4 +1,4 @@
-def moveZeros(self, nums: List[int]) -> None:
+def moveZeros(self, nums: list[int]) -> None:
     if not nums: return 0
 
     i = 0

@@ -1,4 +1,4 @@
-def removeDuplicates(self, nums: List[int]) -> int:
+def removeDuplicates(self, nums: list[int]) -> int:
     if not nums: return 0
 
     idx, temp = 0, 1

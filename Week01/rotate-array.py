@@ -1,4 +1,4 @@
-def rotate(self, nums: List[int], k: int) -> None:
+def rotate(self, nums: list[int], k: int) -> None:
     if not nums and k <= 0:
         return
 
