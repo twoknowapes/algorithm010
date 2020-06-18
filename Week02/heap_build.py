@@ -3,7 +3,7 @@ class MinHeap:
         self.heapList = [0]
         self.currentSize = 0
 
-    # 向上移动直到重获对的结构性质
+    # 向上移动直到重获堆的结构性质
     def percUp(self, i):
         while i // 2 > 0:
             if self.heapList[i] < self.heapList[i // 2]:
@@ -15,7 +15,7 @@ class MinHeap:
     def insert(self, k):
         self.heapList.append(k)
         self.currentSize = self.currentSize + 1
-        self.precUp(self.currentSize)
+        self.percUp(self.currentSize)
 
     def percDown(self, i):
         while (i * 2) < self.currentSize:
@@ -41,7 +41,7 @@ class MinHeap:
         self.heapList[1] = self.heapList[self.currentSize]
         self.currentSize -= 1
         self.heapList.pop()
-        self.precDown()
+        self.percDown()
         return reval
 
 
