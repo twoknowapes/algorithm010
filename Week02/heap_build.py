@@ -3,7 +3,6 @@ class MinHeap:
         self.heapList = [0]
         self.currentSize = 0
 
-    # 向上移动直到重获堆的结构性质
     def percUp(self, i):
         while i // 2 > 0:
             if self.heapList[i] < self.heapList[i // 2]:
@@ -22,9 +21,8 @@ class MinHeap:
             mc = self.minChild(i)
             if self.heapList[i] > self.heapList[mc]:
                 self.heapList[i], self.heapList[mc] = self.heapList[mc], \
-                                                  self.heapList[i]
+                                                      self.heapList[i]
         i = mc
-
 
     def minChild(self, i):
         if i * 2 + 1 >= self.currentSize:
@@ -35,15 +33,13 @@ class MinHeap:
             else:
                 return i * 2 + 1
 
-
     def delMin(self):
         reval = self.heapList[1]
         self.heapList[1] = self.heapList[self.currentSize]
         self.currentSize -= 1
         self.heapList.pop()
-        self.percDown()
+        self.percDown(1)
         return reval
-
 
     def buildHeap(self, alist):
         i = len(alist) // 2
