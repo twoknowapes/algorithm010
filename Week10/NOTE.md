@@ -2,9 +2,6 @@
 ##### 效率优化
 ###### 复杂度：衡量程序效率
 * [大 O 表示法](https://www.bigocheatsheet.com/)
-![3723793cc5c810e9d5b06bc95325bf0a.jpeg](evernotecid://07AA3624-C509-4A21-989E-ECD0CE405181/appyinxiangcom/28530034/ENResource/p1104)
-![497a3f120b7debee07dc0d03984faf04.jpeg](evernotecid://07AA3624-C509-4A21-989E-ECD0CE405181/appyinxiangcom/28530034/ENResource/p1400)
-![bdd6207a11d1d7ab8bea070d8e75fee9.png](evernotecid://07AA3624-C509-4A21-989E-ECD0CE405181/appyinxiangcom/28530034/ENResource/p2248)
 1. 时间复杂度：表示算法的执行时间与数据规模之间的增长关系
 2. 空间复杂度：表示算法的存储空间与数据规模之间的增长关系
 2.1 数组的长度
